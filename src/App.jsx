@@ -1,13 +1,16 @@
+// декларативный
 import { useState, createElement } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 
+// императивный
 const App = () => {
   const [count, setCount] = useState(0)
   const year = new Date().getFullYear();
 
+  // декларативный
   return (
       createElement('section', { id: 'center' },
         createElement('div', { className: 'hero' },
